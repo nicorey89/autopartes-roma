@@ -1,0 +1,723 @@
+/* ========================================
+   CONFIGURACIÓN GENERAL
+   ======================================== */
+
+#root {
+  width: 100%;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+.header {
+
+  width: 100%;
+
+  padding: 20px 40px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background-color: #111;
+
+  color: white;
+}
+
+.logo img {
+
+  width: 150px;
+
+  height: auto;
+}
+
+.menu {
+
+  display: flex;
+
+  gap: 25px;
+}
+
+.menu a {
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 16px;
+}
+
+.menu a:hover {
+
+  text-decoration: underline;
+}
+/* ========================================
+   BUSCADOR DE VEHÍCULOS
+   ======================================== */
+
+.buscador {
+
+  width: 100%;
+
+  max-width: 650px;
+
+  margin: 35px auto 0;
+}
+
+
+.buscador input {
+
+  width: 100%;
+
+  padding: 16px 20px;
+
+  border: 2px solid #ddd;
+
+  border-radius: 10px;
+
+  background-color: white;
+
+  font-size: 17px;
+
+  outline: none;
+
+  transition: border-color 0.2s ease;
+}
+
+
+.buscador input:focus {
+
+  border-color: #111;
+}
+
+
+.buscador input::placeholder {
+
+  color: #999;
+}
+/* ========================================
+   SIN VEHÍCULOS
+   ======================================== */
+
+.sin-autos {
+
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  padding: 50px;
+
+  color: #777;
+
+  font-size: 18px;
+}
+/* ========================================
+   CONTENIDO
+   ======================================== */
+
+main {
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 50px 25px;
+}
+
+/* ========================================
+   PRESENTACIÓN DEL LOGO
+   ======================================== */
+
+.presentacion {
+
+  text-align: center;
+
+  padding: 50px 20px 60px;
+
+}
+
+
+/* Logo principal */
+
+.logo-principal {
+
+  width: 280px;
+
+  max-width: 80%;
+
+  margin: 0 auto 25px;
+
+  animation: aparecerLogo 1.2s ease-out;
+
+}
+
+
+/* Animación del logo */
+
+@keyframes aparecerLogo {
+
+  0% {
+
+    opacity: 0;
+
+    transform:
+      scale(0.7)
+      translateY(-30px);
+
+  }
+
+  60% {
+
+    opacity: 1;
+
+    transform:
+      scale(1.05)
+      translateY(0);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform:
+      scale(1)
+      translateY(0);
+
+  }
+
+}
+
+
+/* Título debajo del logo */
+
+.presentacion h1 {
+
+  font-size: 42px;
+
+  margin: 10px 0;
+
+}
+
+
+/* Descripción */
+
+.presentacion p {
+
+  font-size: 19px;
+
+  color: #666;
+
+  margin: 0;
+}
+
+
+/* ========================================
+   HERO
+   ======================================== */
+ 
+.hero {
+
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+
+  font-size: 42px;
+
+  margin-bottom: 10px;
+}
+
+.hero p {
+
+  font-size: 19px;
+
+  color: #666;
+}
+
+
+/* ========================================
+   TÍTULO DE SECCIÓN
+   ======================================== */
+
+.titulo-seccion {
+
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+
+/* ========================================
+   GALERÍA DE AUTOS
+   ======================================== */
+
+.galeria-autos {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(280px, 1fr));
+
+  gap: 30px;
+}
+
+
+/* ========================================
+   TARJETA DEL AUTO
+   ======================================== */
+
+.auto-card {
+
+  background-color: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.10);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.auto-card:hover {
+
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ========================================
+   IMAGEN DEL AUTO
+   ======================================== */
+
+.auto-imagen {
+
+  width: 100%;
+
+  height: 240px;
+
+  background-color: #eee;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.auto-imagen img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* ========================================
+   INFORMACIÓN DEL AUTO
+   ======================================== */
+
+.auto-info {
+
+  padding: 20px;
+
+  text-align: center;
+}
+
+.auto-info h3 {
+
+  margin: 0 0 8px;
+
+  font-size: 22px;
+}
+
+.auto-info p {
+
+  margin: 0;
+
+  color: #777;
+}
+
+
+/* ========================================
+   GALERÍA DE PRODUCTOS
+   ======================================== */
+
+.galeria-productos {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(250px, 1fr));
+
+  gap: 25px;
+}
+
+
+/* ========================================
+   BOTÓN VOLVER
+   ======================================== */
+
+.boton-volver {
+
+  border: none;
+
+  background-color: #111;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  margin-bottom: 30px;
+}
+
+.boton-volver:hover {
+
+  background-color: #333;
+}
+
+
+/* ========================================
+   TARJETA DE PRODUCTO
+   ======================================== */
+
+.producto {
+
+  background-color: white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.2s ease;
+}
+
+.producto:hover {
+
+  transform: translateY(-5px);
+}
+
+
+/* Imagen */
+
+.producto-imagen {
+
+  width: 100%;
+
+  height: 230px;
+
+  background-color: #eee;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.producto-imagen img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* Información */
+
+.producto-info {
+
+  padding: 20px;
+}
+
+.producto-categoria {
+
+  font-size: 13px;
+
+  color: #777;
+}
+
+.producto-info h3 {
+
+  font-size: 19px;
+
+  margin: 8px 0;
+}
+
+.producto-info p {
+
+  color: #666;
+
+  margin-bottom: 20px;
+}
+
+
+/* ========================================
+   WHATSAPP
+   ======================================== */
+
+.boton-whatsapp {
+
+  display: block;
+
+  text-align: center;
+
+  padding: 12px;
+
+  background-color: #25D366;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+}
+
+
+/* ========================================
+   SIN RESULTADOS
+   ======================================== */
+
+.sin-resultados {
+
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  padding: 50px;
+
+  color: #777;
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+
+  margin-top: 50px;
+
+  padding: 40px 20px;
+
+  text-align: center;
+
+  background-color: #111;
+
+  color: white;
+}
+
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  .header {
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 20px;
+  }
+
+  .hero h1 {
+
+    font-size: 32px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  main {
+
+    padding: 35px 15px;
+  }
+
+  .galeria-autos {
+
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-productos {
+
+    grid-template-columns: 1fr;
+  }
+
+  .auto-imagen {
+
+    height: 220px;
+  }
+
+}
+
+/* ========================================
+   DETALLE DEL VEHÍCULO
+   ======================================== */
+
+.vehiculo-detalle {
+
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+
+/* Imagen grande del vehículo */
+
+.vehiculo-detalle-imagen {
+
+  width: 420px;
+
+  max-width: 90%;
+
+  height: 260px;
+
+  object-fit: contain;
+
+  margin: 0 auto 25px;
+
+  background-color: white;
+
+  border-radius: 15px;
+
+  padding: 15px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.10);
+
+  animation:
+    aparecerVehiculo 0.7s ease-out;
+}
+
+
+/* Animación */
+
+@keyframes aparecerVehiculo {
+
+  from {
+
+    opacity: 0;
+
+    transform: scale(0.9);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+  }
+
+}
+
+
+/* Nombre */
+
+.vehiculo-detalle h1 {
+
+  font-size: 38px;
+
+  margin: 10px 0;
+}
+
+
+/* Descripción */
+
+.vehiculo-detalle p {
+
+  color: #666;
+
+  font-size: 18px;
+}
+
+/* ========================================
+   LOGO Y VEHÍCULO EN CELULAR
+   ======================================== */
+
+@media (max-width: 480px) {
+
+  .logo-principal {
+
+    width: 220px;
+
+  }
+
+
+  .presentacion {
+
+    padding-top: 35px;
+
+  }
+
+
+  .presentacion h1 {
+
+    font-size: 30px;
+
+  }
+
+
+  .presentacion p {
+
+    font-size: 16px;
+
+  }
+
+
+  .vehiculo-detalle-imagen {
+
+    width: 100%;
+
+    height: 220px;
+
+  }
+
+
+  .vehiculo-detalle h1 {
+
+    font-size: 30px;
+
+  }
+
+}
