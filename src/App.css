@@ -1,16 +1,14 @@
 /* ========================================
-   RESET
+   RESET GENERAL
    ======================================== */
 
 * {
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   margin: 0;
@@ -23,9 +21,8 @@ body {
 
   background-color: #ffffff;
 
-  color: #111;
+  color: #111111;
 }
-
 
 button,
 input {
@@ -45,11 +42,10 @@ input {
 
 
 /* ========================================
-   INTRODUCCIÓN
+   INTRO
    ======================================== */
 
 .intro {
-
   position: fixed;
 
   top: 0;
@@ -63,7 +59,6 @@ input {
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   z-index: 9999;
@@ -81,11 +76,10 @@ input {
 
 
 /* ========================================
-   LOGO DE INTRODUCCIÓN
+   LOGO INTRO
    ======================================== */
 
 .intro-logo {
-
   width: 80vw;
 
   max-width: 900px;
@@ -103,13 +97,12 @@ input {
 
 
 /* ========================================
-   ANIMACIÓN DEL LOGO
+   ANIMACIÓN LOGO INTRO
    ======================================== */
 
 @keyframes logoIntro {
 
   0% {
-
     opacity: 0;
 
     transform:
@@ -117,9 +110,7 @@ input {
       scale(1.30);
   }
 
-
   10% {
-
     opacity: 1;
 
     transform:
@@ -127,142 +118,101 @@ input {
       scale(1.30);
   }
 
-
   20% {
-
     transform:
       translateX(0)
       scale(1.17);
   }
 
-
   30% {
-
     transform:
       translateX(0)
       scale(1.05);
   }
 
-
   40% {
-
     transform:
       translateX(0)
       scale(0.95);
   }
 
-
   50% {
-
     transform:
       translateX(0)
       scale(0.86);
   }
 
-
   60% {
-
     transform:
       translateX(0)
       scale(0.77);
   }
 
-
   70% {
-
     transform:
       translateX(0)
       scale(0.69);
   }
 
-
   80% {
-
     transform:
       translateX(0)
       scale(0.62);
   }
 
-
   90% {
-
     transform:
       translateX(0)
       scale(0.56);
   }
 
-
   100% {
-
     opacity: 1;
 
     transform:
       translateX(0)
       scale(0.50);
   }
-
 }
 
 
 /* ========================================
-   SALIDA DE INTRO
+   SALIDA INTRO
    ======================================== */
 
 @keyframes introSalida {
 
   0% {
-
     opacity: 1;
-
   }
 
-
   100% {
-
     opacity: 0;
 
     visibility: hidden;
-
   }
-
 }
 
 
-/* ========================================
-   PRESENTACIÓN HOME
-   ======================================== */
-
-.presentacion {
-
-  width: 100%;
-
-  max-width: 1200px;
-
-  margin: 0 auto;
-
-  padding:
-    80px 30px
-    60px;
-
-  text-align: center;
-}
-#marcas {
-  scroll-margin-top: 90px;
-}
 /* ========================================
    HEADER
    ======================================== */
 
 .header {
   position: sticky;
+
   top: 0;
+
   z-index: 1000;
 
   width: 100%;
+
   height: 72px;
 
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
 
   padding: 8px 35px;
@@ -270,19 +220,22 @@ input {
   background-color: #111111;
 
   box-shadow:
-    0 3px 15px rgba(0, 0, 0, 0.20);
+    0 3px 15px
+    rgba(0, 0, 0, 0.20);
 }
 
 
 /* ========================================
-   LOGO DEL HEADER
+   LOGO HEADER
    ======================================== */
 
 .header-logo {
   width: 150px;
+
   height: 56px;
 
   display: flex;
+
   align-items: center;
 
   cursor: pointer;
@@ -290,11 +243,11 @@ input {
   overflow: hidden;
 }
 
-
 .header-logo img {
   display: block;
 
   width: 140px;
+
   height: 52px;
 
   object-fit: contain;
@@ -307,20 +260,21 @@ input {
 
 .nav {
   display: flex;
+
   align-items: center;
 
   gap: 8px;
 }
-
 
 .nav button {
   border: none;
 
   background: transparent;
 
-  color: white;
+  color: #ffffff;
 
   font-size: 16px;
+
   font-weight: 600;
 
   padding: 10px 18px;
@@ -334,19 +288,37 @@ input {
     color 0.25s ease;
 }
 
-
 .nav button:hover {
   background-color: #e63916;
 
-  color: white;
+  color: #ffffff;
 }
+
+
+/* ========================================
+   HOME
+   ======================================== */
+
+.presentacion {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    80px 30px
+    60px;
+
+  text-align: center;
+}
+
 
 /* ========================================
    LOGO PRINCIPAL
    ======================================== */
 
 .logo-principal {
-
   width: 280px;
 
   max-width: 80%;
@@ -355,7 +327,8 @@ input {
 
   display: block;
 
-  margin: 0 auto 25px;
+  margin:
+    0 auto 25px;
 
   object-fit: contain;
 }
@@ -366,20 +339,18 @@ input {
    ======================================== */
 
 .presentacion h1 {
-
-  margin: 0 0 15px;
+  margin:
+    0 0 15px;
 
   font-size: 42px;
 
   font-weight: 700;
 }
 
-
 .presentacion p {
-
   margin: 0;
 
-  color: #666;
+  color: #666666;
 
   font-size: 18px;
 
@@ -392,17 +363,15 @@ input {
    ======================================== */
 
 .buscador {
-
   width: 100%;
 
   max-width: 700px;
 
-  margin: 35px auto 0;
+  margin:
+    35px auto 0;
 }
 
-
 .buscador input {
-
   width: 100%;
 
   padding:
@@ -426,9 +395,7 @@ input {
     box-shadow 0.25s ease;
 }
 
-
 .buscador input:focus {
-
   border-color: #e63916;
 
   box-shadow:
@@ -436,19 +403,20 @@ input {
     rgba(230, 57, 22, 0.10);
 }
 
-
 .buscador input::placeholder {
-
   color: #999999;
 }
 
 
 /* ========================================
-   SECCIONES
+   MARCAS
    ======================================== */
 
-.seccion-marcas {
+#marcas {
+  scroll-margin-top: 90px;
+}
 
+.seccion-marcas {
   max-width: 1200px;
 
   margin: 0 auto;
@@ -459,9 +427,7 @@ input {
     80px;
 }
 
-
 .titulo-seccion {
-
   text-align: center;
 
   font-size: 32px;
@@ -476,7 +442,6 @@ input {
    ======================================== */
 
 .galeria-marcas {
-
   display: grid;
 
   grid-template-columns:
@@ -490,11 +455,10 @@ input {
 
 
 /* ========================================
-   TARJETA DE MARCA
+   CARD MARCA
    ======================================== */
 
 .marca-card {
-
   background-color: #ffffff;
 
   border-radius: 15px;
@@ -512,9 +476,7 @@ input {
     box-shadow 0.25s ease;
 }
 
-
 .marca-card:hover {
-
   transform:
     translateY(-8px);
 
@@ -529,7 +491,6 @@ input {
    ======================================== */
 
 .marca-imagen {
-
   width: 100%;
 
   height: 200px;
@@ -545,9 +506,7 @@ input {
   padding: 30px;
 }
 
-
 .marca-imagen img {
-
   max-width: 100%;
 
   max-height: 140px;
@@ -557,28 +516,23 @@ input {
 
 
 /* ========================================
-   INFORMACIÓN MARCA
+   INFO MARCA
    ======================================== */
 
 .marca-info {
-
   text-align: center;
 
   padding: 20px;
 }
 
-
 .marca-info h3 {
-
   margin:
     0 0 8px;
 
   font-size: 24px;
 }
 
-
 .marca-info p {
-
   margin: 0;
 
   color: #777777;
@@ -586,11 +540,10 @@ input {
 
 
 /* ========================================
-   RESULTADOS DE BÚSQUEDA
+   RESULTADOS BÚSQUEDA
    ======================================== */
 
 .resultados-busqueda {
-
   max-width: 1200px;
 
   margin:
@@ -601,9 +554,7 @@ input {
     30px;
 }
 
-
 .resultados-busqueda h2 {
-
   text-align: center;
 
   font-size: 30px;
@@ -612,12 +563,335 @@ input {
     0 0 35px;
 }
 
-
 .sin-resultados {
+  text-align: center;
+
+  padding:
+    50px 20px;
+
+  color: #777777;
+
+  font-size: 18px;
+}
+
+
+/* ========================================
+   GALERÍA DE PRODUCTOS
+   ======================================== */
+
+.galeria-productos {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    20px 30px
+    80px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(250px, 1fr)
+    );
+
+  gap: 30px;
+}
+
+
+/* ========================================
+   CARD PRODUCTO
+   ======================================== */
+
+.producto-card {
+  width: 100%;
+
+  min-height: 380px;
+
+  background-color: #ffffff;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  display: flex;
+
+  flex-direction: column;
+
+  box-shadow:
+    0 4px 15px
+    rgba(0, 0, 0, 0.10);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.producto-card:hover {
+  transform:
+    translateY(-8px);
+
+  box-shadow:
+    0 12px 28px
+    rgba(0, 0, 0, 0.18);
+}
+
+
+/* ========================================
+   IMAGEN PRODUCTO
+   ======================================== */
+
+.producto-imagen {
+  width: 100%;
+
+  height: 270px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  background-color: #ffffff;
+
+  overflow: hidden;
+}
+
+.producto-imagen img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.producto-card:hover
+.producto-imagen img {
+  transform:
+    scale(1.05);
+}
+
+
+/* ========================================
+   INFO PRODUCTO
+   ======================================== */
+
+.producto-info {
+  flex: 1;
+
+  padding:
+    18px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
 
   text-align: center;
 
-  padding: 50px 20px;
+  border-top:
+    1px solid #eeeeee;
+}
+
+.producto-info h3 {
+  margin:
+    0 0 8px;
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+  color: #111111;
+}
+
+.producto-info p {
+  margin:
+    4px 0;
+
+  color: #777777;
+
+  font-size: 14px;
+}
+
+
+/* ========================================
+   GALERÍA VEHÍCULOS
+   ======================================== */
+
+.galeria-autos {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding:
+    20px 30px
+    80px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(250px, 1fr)
+    );
+
+  gap: 30px;
+}
+
+
+/* ========================================
+   CARD VEHÍCULO
+   ======================================== */
+
+.auto-card {
+  width: 100%;
+
+  height: 350px;
+
+  background-color: #ffffff;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  display: flex;
+
+  flex-direction: column;
+
+  box-shadow:
+    0 4px 15px
+    rgba(0, 0, 0, 0.10);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.auto-card:hover {
+  transform:
+    translateY(-8px);
+
+  box-shadow:
+    0 12px 28px
+    rgba(0, 0, 0, 0.18);
+}
+
+
+/* ========================================
+   IMAGEN VEHÍCULO
+   ======================================== */
+
+.auto-imagen {
+  width: 100%;
+
+  height: 270px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  background-color: #ffffff;
+
+  overflow: hidden;
+}
+
+.auto-imagen img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.auto-card:hover
+.auto-imagen img {
+  transform:
+    scale(1.05);
+}
+
+
+/* ========================================
+   INFO VEHÍCULO
+   ======================================== */
+
+.auto-info {
+  flex: 1;
+
+  padding:
+    15px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  border-top:
+    1px solid #eeeeee;
+}
+
+.auto-info h3 {
+  margin:
+    0 0 6px;
+
+  font-size: 21px;
+
+  font-weight: 700;
+
+  color: #111111;
+}
+
+.auto-info p {
+  margin: 0;
+
+  color: #e63916;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+
+/* ========================================
+   SIN VEHÍCULOS
+   ======================================== */
+
+.sin-autos {
+  grid-column:
+    1 / -1;
+
+  text-align: center;
+
+  padding:
+    50px 20px;
 
   color: #777777;
 
@@ -630,13 +904,10 @@ input {
    ======================================== */
 
 .boton-volver {
-
   display: block;
 
   margin:
-    35px
-    auto
-    20px;
+    35px auto 20px;
 
   padding:
     12px 20px;
@@ -658,9 +929,7 @@ input {
     transform 0.25s ease;
 }
 
-
 .boton-volver:hover {
-
   background-color: #e63916;
 
   transform:
@@ -669,37 +938,35 @@ input {
 
 
 /* ========================================
-   PÁGINA DE VEHÍCULOS
+   PÁGINA VEHÍCULOS
    ======================================== */
 
 .pagina-vehiculos {
-
   min-height: 70vh;
 
   padding-bottom: 80px;
 }
 
 
-.hero {
+/* ========================================
+   HERO
+   ======================================== */
 
+.hero {
   text-align: center;
 
   padding:
-    40px
-    30px;
+    40px 30px;
 }
 
-
 .hero h1 {
-
-  margin: 0 0 10px;
+  margin:
+    0 0 10px;
 
   font-size: 40px;
 }
 
-
 .hero p {
-
   margin: 0;
 
   color: #777777;
@@ -709,28 +976,23 @@ input {
 
 
 /* ========================================
-   DETALLE DEL VEHÍCULO
+   DETALLE VEHÍCULO
    ======================================== */
 
 .pagina-detalle {
-
   min-height: 70vh;
 
   padding-bottom: 80px;
 }
 
-
 .vehiculo-detalle {
-
   text-align: center;
 
   padding:
     30px;
 }
 
-
 .vehiculo-detalle-imagen {
-
   width: 400px;
 
   max-width: 90%;
@@ -745,18 +1007,14 @@ input {
     0 auto 25px;
 }
 
-
 .vehiculo-detalle h1 {
-
   margin:
     0 0 10px;
 
   font-size: 40px;
 }
 
-
 .vehiculo-detalle p {
-
   margin: 0;
 
   color: #777777;
@@ -770,12 +1028,10 @@ input {
    ======================================== */
 
 .seccion-contacto {
-
   width: 100%;
 
   padding:
-    90px 30px
-    90px;
+    90px 30px;
 
   margin-top: 30px;
 
@@ -790,7 +1046,6 @@ input {
    ======================================== */
 
 .contacto-titulo {
-
   text-align: center;
 
   max-width: 800px;
@@ -799,18 +1054,14 @@ input {
     0 auto 50px;
 }
 
-
 .contacto-titulo h2 {
-
   margin:
     0 0 15px;
 
   font-size: 40px;
 }
 
-
 .contacto-titulo p {
-
   margin: 0;
 
   color: #666666;
@@ -826,7 +1077,6 @@ input {
    ======================================== */
 
 .contacto-contenido {
-
   max-width: 1200px;
 
   margin: 0 auto;
@@ -847,7 +1097,6 @@ input {
    ======================================== */
 
 .contacto-info {
-
   background-color: #ffffff;
 
   border-radius: 15px;
@@ -859,9 +1108,7 @@ input {
     rgba(0, 0, 0, 0.08);
 }
 
-
 .contacto-item {
-
   display: flex;
 
   gap: 20px;
@@ -869,32 +1116,24 @@ input {
   margin-bottom: 35px;
 }
 
-
 .contacto-item:last-child {
-
   margin-bottom: 0;
 }
 
-
 .contacto-icono {
-
   font-size: 30px;
 
   min-width: 40px;
 }
 
-
 .contacto-item h3 {
-
   margin:
     0 0 8px;
 
   font-size: 20px;
 }
 
-
 .contacto-item p {
-
   margin:
     4px 0;
 
@@ -903,9 +1142,7 @@ input {
   line-height: 1.5;
 }
 
-
 .contacto-item a {
-
   display: inline-block;
 
   margin-top: 8px;
@@ -917,9 +1154,7 @@ input {
   text-decoration: none;
 }
 
-
 .contacto-item a:hover {
-
   text-decoration: underline;
 }
 
@@ -929,7 +1164,6 @@ input {
    ======================================== */
 
 .mapa {
-
   width: 100%;
 
   min-height: 400px;
@@ -945,9 +1179,7 @@ input {
     rgba(0, 0, 0, 0.08);
 }
 
-
 .mapa iframe {
-
   display: block;
 
   width: 100%;
@@ -965,230 +1197,17 @@ input {
    ======================================== */
 
 .footer {
-
   width: 100%;
 
   padding:
-    50px 30px;
+    55px 30px
+    25px;
 
   background-color: #111111;
 
   color: #ffffff;
 
   text-align: center;
-}
-
-
-.footer-contenido {
-
-  max-width: 900px;
-
-  margin: 0 auto;
-}
-
-
-.footer-logo {
-
-  width: 160px;
-
-  max-width: 70%;
-
-  height: auto;
-
-  margin-bottom: 15px;
-}
-
-
-.footer h3 {
-
-  margin:
-    5px 0 10px;
-
-  font-size: 22px;
-}
-
-
-.footer p {
-
-  margin:
-    5px 0;
-
-  color: #cccccc;
-}
-
-
-.footer .copyright {
-
-  margin-top: 25px;
-
-  font-size: 13px;
-
-  color: #888888;
-}
-
-
-/* ========================================
-   RESPONSIVE
-   ======================================== */
-
-@media (max-width: 768px) {
-
-
-  /* -----------------------------
-     PRESENTACIÓN
-     ----------------------------- */
-
-  .presentacion {
-
-    padding:
-      60px 20px
-      45px;
-  }
-
-
-  .presentacion h1 {
-
-    font-size: 32px;
-  }
-
-
-  .presentacion p {
-
-    font-size: 16px;
-  }
-
-
-  .logo-principal {
-
-    width: 230px;
-  }
-
-
-  /* -----------------------------
-     MARCAS
-     ----------------------------- */
-
-  .seccion-marcas {
-
-    padding:
-      20px
-      20px
-      60px;
-  }
-
-
-  .titulo-seccion {
-
-    font-size: 28px;
-  }
-
-
-  .galeria-marcas {
-
-    grid-template-columns: 1fr;
-
-    gap: 20px;
-  }
-
-
-  /* -----------------------------
-     RESULTADOS
-     ----------------------------- */
-
-  .resultados-busqueda {
-
-    padding:
-      20px;
-
-  }
-
-
-  .resultados-busqueda h2 {
-
-    font-size: 25px;
-  }
-
-
-  /* -----------------------------
-     VEHÍCULO
-     ----------------------------- */
-
-  .hero h1 {
-
-    font-size: 32px;
-  }
-
-
-  .vehiculo-detalle h1 {
-
-    font-size: 32px;
-  }
-
-
-  .vehiculo-detalle-imagen {
-
-    width: 320px;
-
-    height: 220px;
-  }
-
-
-  /* -----------------------------
-     CONTACTO
-     ----------------------------- */
-
-  .seccion-contacto {
-
-    padding:
-      70px
-      20px;
-  }
-
-
-  .contacto-titulo h2 {
-
-    font-size: 32px;
-  }
-
-
-  .contacto-contenido {
-
-    grid-template-columns: 1fr;
-
-    gap: 25px;
-  }
-
-
-  .contacto-info {
-
-    padding: 25px;
-  }
-
-
-  .mapa {
-
-    min-height: 350px;
-  }
-
-
-  .mapa iframe {
-
-    min-height: 350px;
-  }
-
-
-/* ========================================
-   FOOTER
-   ======================================== */
-
-.footer {
-  width: 100%;
-
-  background-color: #111111;
-
-  color: #ffffff;
-
-  padding: 55px 30px 25px;
 
   border-top:
     4px solid #e63916;
@@ -1196,10 +1215,11 @@ input {
 
 
 /* ========================================
-   CONTENIDO DEL FOOTER
+   CONTENIDO FOOTER
    ======================================== */
 
 .footer-contenido {
+  width: 100%;
 
   max-width: 1100px;
 
@@ -1214,10 +1234,11 @@ input {
    ======================================== */
 
 .footer-logo {
-
   width: 180px;
 
   height: 70px;
+
+  max-width: 80%;
 
   object-fit: contain;
 
@@ -1229,11 +1250,10 @@ input {
 
 
 /* ========================================
-   NOMBRE
+   NOMBRE FOOTER
    ======================================== */
 
 .footer h3 {
-
   margin:
     0 0 8px;
 
@@ -1246,11 +1266,10 @@ input {
 
 
 /* ========================================
-   DESCRIPCIÓN
+   TEXTO FOOTER
    ======================================== */
 
 .footer p {
-
   margin:
     5px 0;
 
@@ -1265,7 +1284,6 @@ input {
    ======================================== */
 
 .footer .copyright {
-
   margin-top: 30px;
 
   padding-top: 20px;
@@ -1278,60 +1296,310 @@ input {
   font-size: 13px;
 }
 
+
+/* ========================================
+   RESPONSIVE - TABLETS
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  /* ==============================
+     HEADER
+     ============================== */
+
+  .header {
+    height: 65px;
+
+    padding:
+      7px 15px;
+  }
+
+  .header-logo {
+    width: 120px;
+
+    height: 50px;
+  }
+
+  .header-logo img {
+    width: 115px;
+
+    height: 48px;
+  }
+
+  .nav {
+    gap: 2px;
+  }
+
+  .nav button {
+    padding:
+      8px 9px;
+
+    font-size: 13px;
+  }
+
+
+  /* ==============================
+     PRESENTACIÓN
+     ============================== */
+
+  .presentacion {
+    padding:
+      60px 20px
+      45px;
+  }
+
+  .presentacion h1 {
+    font-size: 32px;
+  }
+
+  .presentacion p {
+    font-size: 16px;
+  }
+
+  .logo-principal {
+    width: 230px;
+  }
+
+
+  /* ==============================
+     MARCAS
+     ============================== */
+
+  .seccion-marcas {
+    padding:
+      20px
+      20px
+      60px;
+  }
+
+  .titulo-seccion {
+    font-size: 28px;
+  }
+
+  .galeria-marcas {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+
+  /* ==============================
+     RESULTADOS
+     ============================== */
+
+  .resultados-busqueda {
+    padding:
+      20px;
+  }
+
+  .resultados-busqueda h2 {
+    font-size: 25px;
+  }
+
+
+  /* ==============================
+     GALERÍA AUTOS
+     ============================== */
+
+  .galeria-autos {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 18px;
+
+    padding:
+      20px;
+  }
+
+  .auto-card {
+    height: 300px;
+  }
+
+  .auto-imagen {
+    height: 220px;
+
+    padding: 15px;
+  }
+
+  .auto-info {
+    padding:
+      12px;
+  }
+
+  .auto-info h3 {
+    font-size: 17px;
+  }
+
+  .auto-info p {
+    font-size: 14px;
+  }
+
+
+  /* ==============================
+     GALERÍA PRODUCTOS
+     ============================== */
+
+  .galeria-productos {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 18px;
+
+    padding:
+      20px;
+  }
+
+  .producto-card {
+    min-height: 320px;
+  }
+
+  .producto-imagen {
+    height: 220px;
+
+    padding: 15px;
+  }
+
+  .producto-info {
+    padding:
+      12px;
+  }
+
+  .producto-info h3 {
+    font-size: 17px;
+  }
+
+  .producto-info p {
+    font-size: 13px;
+  }
+
+
+  /* ==============================
+     VEHÍCULO
+     ============================== */
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .vehiculo-detalle h1 {
+    font-size: 32px;
+  }
+
+  .vehiculo-detalle-imagen {
+    width: 320px;
+
+    height: 220px;
+  }
+
+
+  /* ==============================
+     CONTACTO
+     ============================== */
+
+  .seccion-contacto {
+    padding:
+      70px 20px;
+  }
+
+  .contacto-titulo h2 {
+    font-size: 32px;
+  }
+
+  .contacto-contenido {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .contacto-info {
+    padding: 25px;
+  }
+
+  .mapa {
+    min-height: 350px;
+  }
+
+  .mapa iframe {
+    min-height: 350px;
+  }
+
+
+  /* ==============================
+     FOOTER
+     ============================== */
+
+  .footer {
+    padding:
+      45px 20px
+      20px;
+  }
+
+  .footer-logo {
+    width: 160px;
+
+    height: 65px;
+  }
+
+  .footer h3 {
+    font-size: 19px;
+  }
 }
 
 
 /* ========================================
-   CELULARES PEQUEÑOS
+   RESPONSIVE - CELULARES
    ======================================== */
 
 @media (max-width: 480px) {
 
+  /* ==============================
+     HEADER
+     ============================== */
+
   .header {
-  height: 65px;
+    height: 62px;
 
-  padding:
-    7px 15px;
-}
+    padding:
+      6px 10px;
+  }
+
+  .header-logo {
+    width: 100px;
+
+    height: 48px;
+  }
+
+  .header-logo img {
+    width: 98px;
+
+    height: 46px;
+  }
+
+  .nav {
+    gap: 0;
+  }
+
+  .nav button {
+    padding:
+      7px 6px;
+
+    font-size: 12px;
+  }
 
 
-.header-logo {
-  width: 115px;
-  height: 50px;
-}
+  /* ==============================
+     PRESENTACIÓN
+     ============================== */
 
-
-.header-logo img {
-  width: 110px;
-  height: 48px;
-}
-
-
-.nav {
-  gap: 0;
-}
-
-
-.nav button {
-  padding:
-    8px 7px;
-
-  font-size: 13px;
-}
   .presentacion h1 {
-
     font-size: 28px;
   }
 
-
   .logo-principal {
-
     width: 200px;
   }
 
-
   .buscador input {
-
     font-size: 15px;
 
     padding:
@@ -1339,73 +1607,381 @@ input {
   }
 
 
-  .boton-volver {
+  /* ==============================
+     MARCAS
+     ============================== */
 
-    margin:
-      25px
-      auto
-      15px;
+  .titulo-seccion {
+    font-size: 25px;
   }
 
+
+  /* ==============================
+     VEHÍCULOS
+     ============================== */
+
+  .galeria-autos {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding:
+      20px;
+  }
+
+  .auto-card {
+    width: 100%;
+
+    max-width: 350px;
+
+    height: 330px;
+
+    margin: 0 auto;
+  }
+
+  .auto-imagen {
+    height: 250px;
+  }
+
+  .auto-info h3 {
+    font-size: 19px;
+  }
+
+
+  /* ==============================
+     PRODUCTOS
+     ============================== */
+
+  .galeria-productos {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding:
+      20px;
+  }
+
+  .producto-card {
+    width: 100%;
+
+    max-width: 350px;
+
+    min-height: 350px;
+
+    margin: 0 auto;
+  }
+
+  .producto-imagen {
+    height: 260px;
+  }
+
+  .producto-info h3 {
+    font-size: 18px;
+  }
+
+
+  /* ==============================
+     BOTÓN VOLVER
+     ============================== */
+
+  .boton-volver {
+    margin:
+      25px auto 15px;
+  }
+
+
+  /* ==============================
+     DETALLE VEHÍCULO
+     ============================== */
+
+  .vehiculo-detalle {
+    padding:
+      20px;
+  }
+
+  .vehiculo-detalle h1 {
+    font-size: 28px;
+  }
+
+  .vehiculo-detalle-imagen {
+    width: 280px;
+
+    height: 200px;
+  }
+
+
+  /* ==============================
+     CONTACTO
+     ============================== */
+
+  .seccion-contacto {
+    padding:
+      60px 15px;
+  }
+
+  .contacto-titulo h2 {
+    font-size: 28px;
+  }
+
+  .contacto-titulo p {
+    font-size: 16px;
+  }
+
+  .contacto-info {
+    padding:
+      20px;
+  }
 
   .contacto-item {
-
     gap: 12px;
+
+    margin-bottom: 25px;
   }
 
-
   .contacto-icono {
-
     font-size: 25px;
 
     min-width: 32px;
   }
 
-
   .contacto-item h3 {
-
     font-size: 18px;
   }
 
-
   .contacto-item p {
-
     font-size: 14px;
   }
 
+  .mapa {
+    min-height: 300px;
+  }
+
+  .mapa iframe {
+    min-height: 300px;
+  }
+
+
+  /* ==============================
+     FOOTER
+     ============================== */
+
+  .footer {
+    padding:
+      40px 15px
+      20px;
+  }
+
+  .footer-contenido {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 150px;
+
+    height: 60px;
+
+    max-width: 80%;
+
+    display: block;
+
+    margin:
+      0 auto 18px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .footer .copyright {
+    font-size: 12px;
+  }
 }
 
-.footer {
-  padding:
-    45px 20px 20px;
+/* ========================================
+   BOTÓN WHATSAPP - PRODUCTOS
+   ======================================== */
+
+.producto-info a {
+  display: inline-block;
+
+  margin-top: 12px;
+
+  padding: 10px 18px;
+
+  background-color: #25D366;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  border-radius: 8px;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 
 /* ========================================
-   LOGO FOOTER
+   HOVER WHATSAPP
    ======================================== */
 
-.footer-logo {
-  width: 180px;
-  height: 70px;
+.producto-info a:hover {
+  background-color: #1ebe5d;
 
-  object-fit: contain;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 5px 12px
+    rgba(37, 211, 102, 0.30);
+}
+
+/* ========================================
+   BOTÓN FLOTANTE WHATSAPP
+   ======================================== */
+
+.whatsapp-flotante {
+  position: fixed;
+
+  right: 25px;
+  bottom: 25px;
+
+  width: 62px;
+  height: 62px;
+
+  background-color: #25D366;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  z-index: 5000;
+
+  box-shadow:
+    0 5px 18px
+    rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* ========================================
+   ICONO WHATSAPP
+   ======================================== */
+
+.whatsapp-flotante::before {
+  content: "";
+
+  width: 34px;
+  height: 34px;
+
+  background-image: url("/imagenes/logo/whatsapp.png");
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
   display: block;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
 }
 
-.footer-contenido {
-  max-width: 1100px;
 
-  margin: 0 auto;
+/* ========================================
+   TEXTO
+   ======================================== */
 
-  text-align: center;
+.whatsapp-flotante span {
+  position: absolute;
+
+  right: 72px;
+
+  background-color: #111111;
+
+  color: #ffffff;
+
+  padding:
+    8px 12px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transform:
+    translateX(10px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 
-.footer h3 {
-  font-size: 19px;
+
+/* ========================================
+   HOVER
+   ======================================== */
+
+.whatsapp-flotante:hover {
+  transform:
+    scale(1.10);
+
+  box-shadow:
+    0 8px 25px
+    rgba(37, 211, 102, 0.45);
+}
+
+
+.whatsapp-flotante:hover span {
+  opacity: 1;
+
+  transform:
+    translateX(0);
+}
+
+@media (max-width: 480px) {
+
+  .whatsapp-flotante {
+    right: 18px;
+    bottom: 18px;
+
+    width: 56px;
+    height: 56px;
+  }
+
+  .whatsapp-flotante::before {
+    font-size: 28px;
+  }
+
+  .whatsapp-flotante span {
+    display: none;
+  }
+
 }

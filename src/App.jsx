@@ -586,7 +586,19 @@ function App() {
 
         )}
 
+        {/* ========================================
+        BOTÓN FLOTANTE WHATSAPP
+        ======================================== */}
 
+        <a
+          href="https://wa.me/5491158079181?text=Hola%20Autopartes%20Roma%2C%20quiero%20consultar%20por%20un%20repuesto."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-flotante"
+          aria-label="Contactar por WhatsApp"
+        >
+          <span>WhatsApp</span>
+        </a>
         {/* ==================================
             FOOTER
             ================================== */}
