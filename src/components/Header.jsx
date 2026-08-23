@@ -1,33 +1,116 @@
+// ========================================
+// HEADER
+// ========================================
+
 function Header() {
+
+
+  // ========================================
+  // IR A LA SECCIÓN MARCAS
+  // ========================================
+
+    const irAMarcas = () => {
+
+      const marcas = document.getElementById("marcas");
+
+      if (marcas) {
+
+        marcas.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
+      }
+
+    };
+
+  // ========================================
+  // IR A CONTACTO
+  // ========================================
+
+
+  const irAContacto = () => {
+
+    const contacto =
+      document.getElementById("contacto");
+
+    if (contacto) {
+
+      contacto.scrollIntoView({
+        behavior: "smooth",
+      });
+
+    }
+
+  };
+
+
+  // ========================================
+  // IR AL INICIO
+  // ========================================
+
+  const irAlInicio = () => {
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+  };
+
+
   return (
+
     <header className="header">
 
-      {/* Nombre del negocio */}
-      <div className="logo">
+
+      {/* ==================================
+          LOGO
+          ================================== */}
+
+      <div
+        className="header-logo"
+        onClick={irAlInicio}
+      >
+
         <img
           src="/imagenes/logo/AR.png"
           alt="Autopartes Roma"
         />
+
       </div>
 
-      {/* Menú principal */}
-      <nav className="menu">
 
-        <a href="#inicio">
+      {/* ==================================
+          NAVEGACIÓN
+          ================================== */}
+
+      <nav className="nav">
+
+        <button
+          onClick={irAlInicio}
+        >
           Inicio
-        </a>
+        </button>
 
-        <a href="#repuestos">
-          Repuestos
-        </a>
 
-        <a href="#contacto">
+        <button
+          onClick={irAMarcas}
+        >
+          Marcas
+        </button>
+
+
+        <button
+          onClick={irAContacto}
+        >
           Contacto
-        </a>
+        </button>
 
       </nav>
 
     </header>
+
   );
 }
 

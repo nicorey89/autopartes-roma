@@ -1,10 +1,17 @@
 // ========================================
-// BUSCADOR
+// BUSCADOR GLOBAL
 // ========================================
 //
-// Este componente recibe:
-// - texto: lo que escribió el usuario
-// - setTexto: función para modificar el texto
+// Busca tanto vehículos como repuestos.
+//
+// Ejemplos:
+//
+// "Palio"
+// "Fiat"
+// "Guardabarros"
+// "Guardabarros Fiat"
+// "Óptica Corsa"
+// "Gol Guardabarros"
 
 function Buscador({ texto, setTexto }) {
 
@@ -14,9 +21,11 @@ function Buscador({ texto, setTexto }) {
 
       <input
         type="text"
-        placeholder="Buscar vehículo..."
+        placeholder="Buscar repuesto, marca o vehículo..."
         value={texto}
-        onChange={(e) => setTexto(e.target.value)}
+        onChange={(e) =>
+          setTexto(e.target.value)
+        }
       />
 
     </div>

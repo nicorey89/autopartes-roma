@@ -2,19 +2,24 @@
 // LISTA DE VEHÍCULOS
 // ========================================
 //
-// Cada vehículo tiene:
-// - id
-// - marca
-// - modelo
-// - nombre para mostrar
-// - imagen
+// marcaId indica a qué marca pertenece
+// cada vehículo.
 //
-// Para agregar otro vehículo,
-// solamente agregamos otro objeto.
+// Ejemplo:
+// marcaId: 1 → Fiat
+// marcaId: 2 → Chevrolet
+// marcaId: 3 → Volkswagen
+// marcaId: 4 → Peugeot
 
 const autos = [
+
+  // ========================================
+  // FIAT
+  // ========================================
+
   {
     id: 1,
+    marcaId: 1,
     marca: "Fiat",
     modelo: "Palio",
     nombre: "Fiat Palio F2",
@@ -23,6 +28,21 @@ const autos = [
 
   {
     id: 2,
+    marcaId: 1,
+    marca: "Fiat",
+    modelo: "Palio",
+    nombre: "Fiat Palio F3",
+    imagen: "/imagenes/autos/palio-fase3.png",
+  },
+
+
+  // ========================================
+  // CHEVROLET
+  // ========================================
+
+  {
+    id: 3,
+    marcaId: 2,
     marca: "Chevrolet",
     modelo: "Corsa",
     nombre: "Chevrolet Corsa",
@@ -30,7 +50,22 @@ const autos = [
   },
 
   {
-    id: 3,
+    id: 4,
+    marcaId: 2,
+    marca: "Chevrolet",
+    modelo: "Classic",
+    nombre: "Chevrolet Classic",
+    imagen: "/imagenes/autos/corsa.png",
+  },
+
+
+  // ========================================
+  // VOLKSWAGEN
+  // ========================================
+
+  {
+    id: 5,
+    marcaId: 3,
     marca: "Volkswagen",
     modelo: "Gol",
     nombre: "Volkswagen Gol",
@@ -38,12 +73,28 @@ const autos = [
   },
 
   {
-    id: 4,
-    marca: "Fiat",
-    modelo: "Palio",
-    nombre: "Fiat Palio F3",
-    imagen: "/imagenes/autos/palio-fase3.png",
+    id: 6,
+    marcaId: 3,
+    marca: "Volkswagen",
+    modelo: "Fox",
+    nombre: "Volkswagen Fox",
+    imagen: "/imagenes/autos/gol.png",
   },
+
+
+  // ========================================
+  // PEUGEOT
+  // ========================================
+
+  {
+    id: 7,
+    marcaId: 4,
+    marca: "Peugeot",
+    modelo: "206",
+    nombre: "Peugeot 206",
+    imagen: "/imagenes/autos/corsa.png",
+  },
+
 ];
 
 export default autos;

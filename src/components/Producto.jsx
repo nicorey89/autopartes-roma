@@ -1,20 +1,40 @@
+// ========================================
+// TARJETA DE PRODUCTO
+// ========================================
+
 function Producto({ producto }) {
 
-  // Número de WhatsApp del negocio.
-  // Más adelante colocaremos el número real.
-  const numeroWhatsApp = "5491100000000";
+  // Número de WhatsApp
+  //
+  // REEMPLAZAR por el número real.
+  //
+  // Ejemplo:
+  // 5491123456789
 
-  // Mensaje que se enviará a WhatsApp
-  const mensaje = `Hola, quiero consultar por ${producto.nombre}`;
+  const numeroWhatsApp =
+    "5491100000000";
 
-  // Creamos el enlace de WhatsApp
+
+  // Mensaje de WhatsApp
+
+  const mensaje =
+    `Hola, quiero consultar por ${producto.nombre}`;
+
+
+  // Enlace de WhatsApp
+
   const enlaceWhatsApp =
-    `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+    `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
+      mensaje
+    )}`;
+
 
   return (
+
     <article className="producto">
 
-      {/* Imagen del producto */}
+      {/* Imagen */}
+
       <div className="producto-imagen">
 
         <img
@@ -24,22 +44,30 @@ function Producto({ producto }) {
 
       </div>
 
+
       {/* Información */}
+
       <div className="producto-info">
 
         <span className="producto-categoria">
+
           {producto.categoria}
+
         </span>
+
 
         <h3>
           {producto.nombre}
         </h3>
 
+
         <p>
-          {producto.vehiculo} - {producto.modelo}
+          {producto.marca} {producto.modelo}
         </p>
 
-        {/* Botón de WhatsApp */}
+
+        {/* WhatsApp */}
+
         <a
           href={enlaceWhatsApp}
           target="_blank"
