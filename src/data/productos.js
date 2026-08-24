@@ -206,6 +206,21 @@ const productos = [
     imagen:
       "/imagenes/repuestos/gol-guardabarros.jpg",
   },
+  {
+    id: 10,
+    autoId: 10,
+
+    nombre: "Guardabarros Ford",
+
+    categoria: "Guardabarros",
+
+    marca: "Ford",
+
+    modelo: "Fiesta",
+
+    imagen:
+      "/imagenes/repuestos/gol-guardabarros.jpg",
+  },
 
 ];
 

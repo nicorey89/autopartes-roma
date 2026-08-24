@@ -24,19 +24,44 @@ const marcas = [
   {
     id: 2,
     nombre: "Chevrolet",
-    imagen: "/imagenes/marcas/logo-Fiat.png",
+    imagen: "/imagenes/marcas/logo-chevrolet.png",
   },
 
   {
     id: 3,
     nombre: "Volkswagen",
-    imagen: "/imagenes/marcas/logo-Fiat.png",
+    imagen: "/imagenes/marcas/logo-volkswagen.png",
   },
 
   {
     id: 4,
     nombre: "Peugeot",
-    imagen: "/imagenes/marcas/logo-Fiat.png",
+    imagen: "/imagenes/marcas/logo-peugeot.png",
+  },
+  {
+    id: 5,
+    nombre: "Citroen",
+    imagen: "/imagenes/marcas/logo-citroen.png",
+  },
+  {
+    id: 6,
+    nombre: "Renault",
+    imagen: "/imagenes/marcas/logo-renault.png",
+  },
+  {
+    id: 7,
+    nombre: "Ford",
+    imagen: "/imagenes/marcas/logo-ford.png",
+  },
+  {
+    id: 8,
+    nombre: "Toyota",
+    imagen: "/imagenes/marcas/logo-toyota.png",
+  },
+  {
+    id: 9,
+    nombre: "Honda",
+    imagen: "/imagenes/marcas/logo-honda.png",
   },
 ];
 
