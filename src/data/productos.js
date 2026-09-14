@@ -35,7 +35,7 @@ const productos = [
 
   {
     id: 2,
-    autoId: 1,
+    autoId: 2,
 
     nombre: "Guardabarros Fiat Palio Fase 3",
 
@@ -53,46 +53,74 @@ const productos = [
     id: 3,
     autoId: 1,
 
-    nombre: "Óptica Fiat Palio",
+    nombre: "Óptica FN AN Fiat Palio Fase 2",
 
     categoria: "Ópticas",
 
     marca: "Fiat",
 
-    modelo: "Palio",
+    modelo: "Palio Fase 2",
 
     imagen:
-      "/imagenes/repuestos/gol-guardabarros.jpg",
+      "/imagenes/repuestos/palio-f2/opt-FN-AN.jpg",
   },
 
+  {
+    id: 4,
+    autoId: 1,
+
+    nombre: "Óptica FN AC Fiat Palio Fase 2",
+
+    categoria: "Ópticas",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/opt-FN-AC.jpg",
+  },
+
+  {
+    id: 5,
+    autoId: 1,
+
+    nombre: "Óptica FC AC Fiat Palio Fase 2",
+
+    categoria: "Ópticas",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/opt-FC-AC.jpg",
+  },
+  {
+    id: 6,
+    autoId: 1,
+
+    nombre: "Óptica FC AN Fiat Palio Fase 2",
+
+    categoria: "Ópticas",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/opt-FC-AN.jpg",
+  },
 
   // ========================================
   // FIAT SIENA
   // ========================================
-
-  {
-    id: 4,
-    autoId: 2,
-
-    nombre: "Guardabarros Fiat Siena",
-
-    categoria: "Guardabarros",
-
-    marca: "Fiat",
-
-    modelo: "Siena",
-
-    imagen:
-      "/imagenes/repuestos/gol-guardabarros.jpg",
-  },
-
-
   // ========================================
   // CHEVROLET CORSA
   // ========================================
 
   {
-    id: 5,
+    id: 7,
     autoId: 3,
 
     nombre: "Guardabarros Chevrolet Corsa",
@@ -108,7 +136,7 @@ const productos = [
   },
 
   {
-    id: 6,
+    id: 8,
     autoId: 3,
 
     nombre: "Óptica Chevrolet Corsa",
@@ -129,7 +157,7 @@ const productos = [
   // ========================================
 
   {
-    id: 7,
+    id: 9,
     autoId: 4,
 
     nombre: "Guardabarros Chevrolet Classic",
@@ -150,7 +178,7 @@ const productos = [
   // ========================================
 
   {
-    id: 8,
+    id: 10,
     autoId: 5,
 
     nombre: "Guardabarros Volkswagen Gol",
@@ -171,7 +199,7 @@ const productos = [
   // ========================================
 
   {
-    id: 9,
+    id: 11,
     autoId: 6,
 
     nombre: "Guardabarros Volkswagen Fox",
@@ -192,34 +220,49 @@ const productos = [
   // ========================================
 
   {
-    id: 10,
+    id: 12,
     autoId: 7,
 
-    nombre: "Guardabarros Peugeot 206",
+    nombre: "Guardabarros Izquierdo Peugeot 207",
 
     categoria: "Guardabarros",
 
     marca: "Peugeot",
 
-    modelo: "206",
+    modelo: "207",
 
     imagen:
-      "/imagenes/repuestos/gol-guardabarros.jpg",
+      "/imagenes/repuestos/PEUGEOT-207/GDI207.jpg",
   },
   {
-    id: 10,
-    autoId: 10,
+    id: 13,
+    autoId: 7,
 
-    nombre: "Guardabarros Ford",
+    nombre: "Guardabarros Derecho Peugeot 207",
 
     categoria: "Guardabarros",
 
-    marca: "Ford",
+    marca: "Peugeot",
 
-    modelo: "Fiesta",
+    modelo: "207",
 
     imagen:
-      "/imagenes/repuestos/gol-guardabarros.jpg",
+      "/imagenes/repuestos/PEUGEOT-207/GDD207.jpg",
+  },
+  {
+    id: 14,
+    autoId: 7,
+
+    nombre: "Paragolpes P/Faro Aux Peugeot 207",
+
+    categoria: "Paragolpes",
+
+    marca: "Peugeot",
+
+    modelo: "207",
+
+    imagen:
+      "/imagenes/repuestos/PEUGEOT-207/PD207CAA.jpg",
   },
 
 ];

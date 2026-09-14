@@ -90,9 +90,9 @@ const autos = [
     id: 7,
     marcaId: 4,
     marca: "Peugeot",
-    modelo: "206",
-    nombre: "Peugeot 206",
-    imagen: "/imagenes/autos/corsa.png",
+    modelo: "207",
+    nombre: "Peugeot 207",
+    imagen: "/imagenes/autos/PEU207.jpg",
   },
 
 ];
