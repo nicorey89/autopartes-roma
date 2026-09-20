@@ -14,14 +14,14 @@
 const productos = [
 
   // ========================================
-  // FIAT PALIO
+  // FIAT PALIO F2
   // ========================================
 
   {
     id: 1,
-    autoId: 1,
+    autoId: 3,
 
-    nombre: "Guardabarros Fiat Palio Fase 2",
+    nombre: "Guardabarros Derecho Fiat Palio Fase 2",
 
     categoria: "Guardabarros",
 
@@ -30,28 +30,28 @@ const productos = [
     modelo: "Palio Fase 2",
 
     imagen:
-      "/imagenes/repuestos/gol-guardabarros.jpg",
+      "/imagenes/repuestos/palio-f2/GDD-palio-f2.jpg",
   },
 
   {
     id: 2,
-    autoId: 2,
+    autoId: 3,
 
-    nombre: "Guardabarros Fiat Palio Fase 3",
+    nombre: "Guardabarros Izquierdo Fiat Palio Fase 2",
 
     categoria: "Guardabarros",
 
     marca: "Fiat",
 
-    modelo: "Palio Fase 3",
+    modelo: "Palio Fase 2",
 
     imagen:
-      "/imagenes/repuestos/gol-guardabarros.jpg",
+      "/imagenes/repuestos/palio-f2/GDI-palio-f2.jpg",
   },
 
   {
     id: 3,
-    autoId: 1,
+    autoId: 3,
 
     nombre: "Óptica FN AN Fiat Palio Fase 2",
 
@@ -67,7 +67,7 @@ const productos = [
 
   {
     id: 4,
-    autoId: 1,
+    autoId: 3,
 
     nombre: "Óptica FN AC Fiat Palio Fase 2",
 
@@ -83,7 +83,7 @@ const productos = [
 
   {
     id: 5,
-    autoId: 1,
+    autoId: 3,
 
     nombre: "Óptica FC AC Fiat Palio Fase 2",
 
@@ -98,7 +98,7 @@ const productos = [
   },
   {
     id: 6,
-    autoId: 1,
+    autoId: 3,
 
     nombre: "Óptica FC AN Fiat Palio Fase 2",
 
@@ -111,6 +111,231 @@ const productos = [
     imagen:
       "/imagenes/repuestos/palio-f2/opt-FC-AN.jpg",
   },
+  {
+    id: 7,
+    autoId: 3,
+
+    nombre: "Capot Fiat Palio Fase 2",
+
+    categoria: "Capot",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/capot-palio-f2.jpg",
+  },
+  {
+    id: 8,
+    autoId: 3,
+
+    nombre: "Espejos Fiat Palio Fase 2",
+
+    categoria: "Espejos",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/espejo-palio-f2.jpg",
+  },
+  {
+    id: 9,
+    autoId: 3,
+
+    nombre: "Faro Trasero Ambar Fiat Palio Fase 2",
+
+    categoria: "Faros Traseros",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/faro-tras-ambar-palio-f2.jpg",
+  },
+  {
+    id: 10,
+    autoId: 3,
+
+    nombre: "Faro Trasero Blanco Fiat Palio Fase 2",
+
+    categoria: "Faros Traseros",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/faro-tras-blanco-palio-f2.jpg",
+  },
+  {
+    id: 11,
+    autoId: 3,
+
+    nombre: "Faro Trasero Fume Fiat Palio Fase 2",
+
+    categoria: "Faros Traseros",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/faro-tras-fume-palio-f2.jpg",
+  },
+  {
+    id: 12,
+    autoId: 3,
+
+    nombre: "Ojo De Gato Trasero Fiat Palio Fase 2",
+
+    categoria: "Ojo de Gato",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/ojo-gato-tras-palio-f2.jpg",
+  },
+  {
+    id: 13,
+    autoId: 3,
+
+    nombre: "Paragolpe Delantero Fiat Palio Fase 2",
+
+    categoria: "Paragolpes",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/parag-del-palio-f2.jpg",
+  },
+  {
+    id: 14,
+    autoId: 3,
+
+    nombre: "Paragolpe Trasero Fiat Palio Fase 2",
+
+    categoria: "Paragolpes",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/parag-tras-palio-f2.jpg",
+  },
+  {
+    id: 15,
+    autoId: 3,
+
+    nombre: "Parrilla Delantera Fiat Palio Fase 2",
+
+    categoria: "Parrillas",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/parrilla-del-palio-f2.jpg",
+  },
+  {
+    id: 16,
+    autoId: 3,
+
+    nombre: "Rejillas Inf Ciega Nafta Fiat Palio Fase 2",
+
+    categoria: "Rejillas",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/rejilla-ciega-palio-f2-viejo.jpg",
+  },
+  {
+    id: 17,
+    autoId: 3,
+
+    nombre: "Rejilla Inf P/Aux Nafta Fiat Palio Fase 2",
+
+    categoria: "Rejillas",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/rejilla-lat-p-aux-parag-del-palio-f2.jpg",
+  },
+  {
+    id: 18,
+    autoId: 3,
+
+    nombre: "Rejilla Inf Ciega Diesel Fiat Palio Fase 2",
+
+    categoria: "Rejillas",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/rejilla-ciega-palio-f2-viejo-diesel.jpg",
+  },
+  {
+    id: 19,
+    autoId: 3,
+
+    nombre: "Rejilla Inf P/Aux Diesel Fiat Palio Fase 2",
+
+    categoria: "Rejillas",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/rejilla-p-aux-palio-f2-viejo-diesel.jpg",
+  },
+  {
+    id: 20,
+    autoId: 3,
+
+    nombre: "Rejilla Inf Ciega Modelo Nuevo Fiat Palio Fase 2",
+
+    categoria: "Rejillas",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/rejilla-sin-aux-palio-f2-viejo.jpg",
+  },
+  {
+    id: 21,
+    autoId: 3,
+
+    nombre: "Rejilla Inf P/Aux Modelo Nuevo Fiat Palio Fase 2",
+
+    categoria: "Rejillas",
+
+    marca: "Fiat",
+
+    modelo: "Palio Fase 2",
+
+    imagen:
+      "/imagenes/repuestos/palio-f2/rejilla-para-aux-palio-f2-nuevo.jpg",
+  },
 
   // ========================================
   // FIAT SIENA
@@ -120,8 +345,8 @@ const productos = [
   // ========================================
 
   {
-    id: 7,
-    autoId: 3,
+    id: 22,
+    autoId: 7,
 
     nombre: "Guardabarros Chevrolet Corsa",
 
@@ -136,8 +361,8 @@ const productos = [
   },
 
   {
-    id: 8,
-    autoId: 3,
+    id: 23,
+    autoId: 7,
 
     nombre: "Óptica Chevrolet Corsa",
 
@@ -157,8 +382,8 @@ const productos = [
   // ========================================
 
   {
-    id: 9,
-    autoId: 4,
+    id: 24,
+    autoId: 8,
 
     nombre: "Guardabarros Chevrolet Classic",
 
@@ -178,8 +403,8 @@ const productos = [
   // ========================================
 
   {
-    id: 10,
-    autoId: 5,
+    id: 25,
+    autoId: 11,
 
     nombre: "Guardabarros Volkswagen Gol",
 
@@ -199,16 +424,16 @@ const productos = [
   // ========================================
 
   {
-    id: 11,
-    autoId: 6,
+    id: 26,
+    autoId: 11,
 
-    nombre: "Guardabarros Volkswagen Fox",
+    nombre: "Guardabarros Volkswagen Gol G3",
 
     categoria: "Guardabarros",
 
     marca: "Volkswagen",
 
-    modelo: "Fox",
+    modelo: "Gol",
 
     imagen:
       "/imagenes/repuestos/gol-guardabarros.jpg",
@@ -220,8 +445,8 @@ const productos = [
   // ========================================
 
   {
-    id: 12,
-    autoId: 7,
+    id: 27,
+    autoId: 17,
 
     nombre: "Guardabarros Izquierdo Peugeot 207",
 
@@ -235,8 +460,8 @@ const productos = [
       "/imagenes/repuestos/PEUGEOT-207/GDI207.jpg",
   },
   {
-    id: 13,
-    autoId: 7,
+    id: 28,
+    autoId: 17,
 
     nombre: "Guardabarros Derecho Peugeot 207",
 
@@ -250,8 +475,8 @@ const productos = [
       "/imagenes/repuestos/PEUGEOT-207/GDD207.jpg",
   },
   {
-    id: 14,
-    autoId: 7,
+    id: 29,
+    autoId: 17,
 
     nombre: "Paragolpes P/Faro Aux Peugeot 207",
 
