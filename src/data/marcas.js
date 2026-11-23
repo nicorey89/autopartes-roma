@@ -18,26 +18,27 @@ const marcas = [
   {
     id: 1,
     nombre: "Fiat",
-    imagen: "/imagenes/marcas/logo-Fiat.png",
+    imagen: "/imagenes/marcas/logo-fiat.png",
   },
 
   {
     id: 2,
-    nombre: "Chevrolet",
-    imagen: "/imagenes/marcas/logo-chevrolet.png",
-  },
-
-  {
-    id: 3,
     nombre: "Volkswagen",
     imagen: "/imagenes/marcas/logo-volkswagen.png",
+  },
+  
+  {
+    id: 3,
+    nombre: "Peugeot",
+    imagen: "/imagenes/marcas/logo-peugeot.png",
   },
 
   {
     id: 4,
-    nombre: "Peugeot",
-    imagen: "/imagenes/marcas/logo-peugeot.png",
+    nombre: "Chevrolet",
+    imagen: "/imagenes/marcas/logo-chevrolet.png",
   },
+
   {
     id: 5,
     nombre: "Citroen",
